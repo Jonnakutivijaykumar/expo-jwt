@@ -27,8 +27,9 @@ class Encoder {
 
   buildHeader(): JWTHeader {
     return {
-      alg: this.options.algorithm,
-      typ: 'JWT'
+      typ: 'JWT',
+      alg: this.options.algorithm
+    
     };
   }
 
